@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .khoi1{
+        position: static;
+        background-color: brown;
+    }
+    .khoi2{
+        background-color: blueviolet ;
+        position: relative;
+        top: 10px;
+        left: 5000px;
+        max-width: 10000px;
+    }
+    .khoi3{
+        position: absolute;
+        background-color: aqua;
+        top: 0px;
+    }
+    .khoi4{
+        position: fixed;
+        color: black;
+        background-color: aqua;
+        max-width: 100px;
+        top: 0px;
+    }
+    .khoi5{
+        position: sticky;
+        background-color: bisque;
+        left: 0px;
+    }
+    .displayy{
+        display: block;
+        width: 100px;
+        background-color:burlywood ;
+    }
+    .inlinee{
+        background-color: aquamarine;
+    }
+    .mixinlineblock
+    {
+        background-color: blue;
+        width: 100px;
+        height: 50px;
+    }
+    .khoi6{
+        display: none;
+        background-color: black;
+        width: 5000px;
+        height: 5000px;
+    }
+    .boxflex{
+        display: flex;
+        background: red;
+        width: 120px;
+        padding: 10px;
+        justify-content: space-between;
+    }
+    .item{
+        background-color: yellow;
+        padding: 10px;
+    }
+    .boxgrid{
+        display: grid;
+        background: black;
+        grid-template-columns: 50px 70px;
+        gap: 5px;
+        width: 120px;
+        padding: 10px;
+    }
+    .boxoverflow{
+        width: 100px;
+        height: 30px;
+        border: 2px solid black;
+        overflow: auto;
+    }
+    .box{
+        border: 1px solid black;
+        padding: 10px;
+        max-width: 150px;
+    }
+    .box img{
+        float: right;
+        width: 100px;
+    }
+    .box p{
+        font-size: 13px;
+    }
+</style>
+<body>
+    <h1 class="khoi1">khoi1 is static</h1>
+    <p class="khoi6"> khoi su dung none </p>
+    <h2 class="khoi2">khoi2 is relative</h2>
+    <p class="khoi3">khoi3 is absolute</p>
+    <h1 class="khoi4"> khoi 4 is fixed</h1>
+    <h2 class="khoi5"> khoi 5 is sticky</h2>
+    <p class="displayy"> uuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuu</p>
+    <p class="inlinee"> day la inlineeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee</p>
+    <p class="mixinlineblock"> mix blockinline</p>
+    <div class="boxflex">
+        <div class="item"> hop1 </div>
+        <div class="item"> hop2 </div>
+    </div>
+    <div class="boxgrid">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+    </div>
+    <div class="boxoverflow">
+        <p> Day ladoan van ban dai rat dai nha</p>
+        <div class="khoicon">
+    </div>
+</body>
+</html>
